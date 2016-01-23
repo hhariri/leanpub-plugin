@@ -7,6 +7,18 @@ IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
 
 You can download the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
 
+You can also download [latest binary](distro/leanpub-1.0.zip) and install from disk
+### Building from source
+
+Download and run 
+
+    gradle build
+    
+It uses the [Gradle IntelliJ Plugin](https://github.com/JetBrains/gradle-intellij-plugin) to build plugins which does all the heavyweight lifting. Note, this is not the Gradle plugin for IntelliJ IDEA (which already ships with the IDE)
+but a Gradle plugin for plugin development. Too many plugins there? It's fine actually. 
+
+
+
 ## Setup
 
 The plugin requires to configuration parameters:
