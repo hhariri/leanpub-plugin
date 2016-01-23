@@ -20,7 +20,11 @@ intellij {
 }
 
 group 'com.hadihariri'
-version '1.0'
+if (hasProperty("teamcity")) {
+    version = teamcity["build.number"]
+} else
+    version = "0.1-SNAPSHOT"
+
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.10'
