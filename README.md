@@ -51,6 +51,8 @@ the slug would be:
 The plugin installs two menu entries under Tools | Leanpub. The first one generates a complete preview of the book whereas the Publish 
 publishes the book. 
 
+![Menu](images/menu.png)
+
 If the operation is successful, you'll get notified with a balloon message and shortly afterwards your book will be available in the Dropbox
 folder your Leanpub account is linked to. 
 
