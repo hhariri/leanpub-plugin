@@ -41,7 +41,7 @@
   <actions>
     <!-- Add your actions here -->
 
-    <group popup="true" text="Leanpub" id="Leanpub" description="Leanpub">
+    <group popup="true" text="Leanpub" id="Leanpub" description="Leanpub" icon="/icons/leanpub.png">
       <add-to-group group-id="ToolsMenu" anchor="last"/>
     </group>
     <action id="LeanpubPreviewAction" class="com.hadihariri.leanpub.PreviewAction" text="Generate Preview"
