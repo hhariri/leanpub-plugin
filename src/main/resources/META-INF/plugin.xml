@@ -4,9 +4,7 @@
   <version>1.0</version>
   <vendor email="mail@hadihariri.com" url="http://hadihariri.com">Hadi Hariri</vendor>
 
-  <description><![CDATA[
-      Generate preview directly from inside IntelliJ IDEA<br>
-    ]]></description>
+  <description><![CDATA[A plugin for Leanpub that allows you to generate previews as well as publish books, directly from inside the IDE. Works on all IntelliJ-based IDE's]]></description>
 
   <change-notes><![CDATA[
     ]]>
