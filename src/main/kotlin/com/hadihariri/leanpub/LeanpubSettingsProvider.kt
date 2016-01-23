@@ -7,12 +7,12 @@ import com.intellij.openapi.project.Project
 @State(name = "LeanpubSettingsProvider", storages = arrayOf(
                         Storage(file = StoragePathMacros.PROJECT_FILE),
                         Storage(file = StoragePathMacros.PROJECT_CONFIG_DIR + "/leanpub.xml", scheme = StorageScheme.DIRECTORY_BASED)))
-public class LeanpubSettingsProvider : PersistentStateComponent<LeanpubSettingsProvider> {
-    var apiKey: String? = null
-    var bookSlug: String? = null
+class LeanpubSettingsProvider : PersistentStateComponent<LeanpubSettingsProvider> {
+    var apikey = ""
+    var slug = ""
 
     companion object {
-        fun create(project: Project) = ServiceManager.getService(project, javaClass<LeanpubSettingsProvider>())
+        fun create(project: Project) = ServiceManager.getService(project, LeanpubSettingsProvider::class.java)
 
     }
 
@@ -21,7 +21,7 @@ public class LeanpubSettingsProvider : PersistentStateComponent<LeanpubSettingsP
     }
 
     override fun loadState(state: LeanpubSettingsProvider?) {
-        this.apiKey = state?.apiKey
-        this.bookSlug = state?.bookSlug
+        this.apikey = state?.apikey ?: ""
+        this.slug = state?.slug ?: ""
     }
 }

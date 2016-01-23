@@ -17,18 +17,18 @@ public class LeanpubSettingsPanel {
     }
 
     public boolean isModified() {
-        return !Comparing.equal(apiKey.getText(), leanpubSettingsProvider.getApiKey())
-                || !(Comparing.equal(bookSlug.getText(), leanpubSettingsProvider.getBookSlug()));
+        return !Comparing.equal(apiKey.getText(), leanpubSettingsProvider.getApikey())
+                || !(Comparing.equal(bookSlug.getText(), leanpubSettingsProvider.getSlug()));
     }
 
     public void apply() {
-        leanpubSettingsProvider.setApiKey(apiKey.getText());
-        leanpubSettingsProvider.setBookSlug(bookSlug.getText());
+        leanpubSettingsProvider.setApikey(apiKey.getText());
+        leanpubSettingsProvider.setSlug(bookSlug.getText());
     }
 
     public void reset() {
-        apiKey.setText(leanpubSettingsProvider.getApiKey());
-        bookSlug.setText(leanpubSettingsProvider.getBookSlug());
+        apiKey.setText(leanpubSettingsProvider.getApikey());
+        bookSlug.setText(leanpubSettingsProvider.getSlug());
     }
 
 

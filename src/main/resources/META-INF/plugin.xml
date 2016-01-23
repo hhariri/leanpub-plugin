@@ -1,6 +1,6 @@
 <idea-plugin version="2">
-  <id>com.hadihariri.plugins.leanpub</id>
-  <name>LeanPub</name>
+  <id>com.hadihariri.leanpub</id>
+  <name>Leanpub</name>
   <version>1.0</version>
   <vendor email="mail@hadihariri.com" url="http://hadihariri.com">Hadi Hariri</vendor>
 
@@ -25,7 +25,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
       <projectConfigurable instance="com.hadihariri.leanpub.LeanpubSettings" groupId="tools"
-                           groupWeight="130" displayName="LeanPub"/>
+                           groupWeight="130" displayName="Leanpub"/>
       <projectService serviceInterface="com.hadihariri.leanpub.LeanpubSettingsProvider"
                       serviceImplementation="com.hadihariri.leanpub.LeanpubSettingsProvider"/>
   </extensions>
@@ -41,10 +41,17 @@
   <actions>
     <!-- Add your actions here -->
 
-      <action id="Previewaction" class="com.hadihariri.leanpub.PreviewAction" text="Generate Leanpub Preview"
-              description="Generate Leanpub Preview">
-          <add-to-group group-id="ToolsMenu" anchor="last"/>
-      </action>
+    <group popup="true" text="Leanpub" id="Leanpub" description="Leanpub">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </group>
+    <action id="LeanpubPreviewAction" class="com.hadihariri.leanpub.PreviewAction" text="Generate Preview"
+            description="Generate preview">
+      <add-to-group group-id="Leanpub" anchor="last"/>
+    </action>
+    <action id="LeanpubPublishAction" class="com.hadihariri.leanpub.PublishAction" text="Publish"
+            description="Publish">
+      <add-to-group group-id="Leanpub" anchor="last"/>
+    </action>
   </actions>
 
 </idea-plugin>

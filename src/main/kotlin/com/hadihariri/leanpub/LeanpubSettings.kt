@@ -5,7 +5,7 @@ import javax.swing.JComponent
 import com.intellij.psi.PsiManager
 import com.intellij.openapi.project.Project
 
-public class LeanpubSettings(val project: Project): SearchableConfigurable {
+class LeanpubSettings(val project: Project): SearchableConfigurable {
     val panel = LeanpubSettingsPanel()
 
     override fun getDisplayName(): String? {

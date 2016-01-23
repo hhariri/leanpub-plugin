@@ -20,7 +20,7 @@ intellij {
 }
 
 group 'com.hadihariri'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.10'
@@ -36,4 +36,5 @@ sourceSets {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.0-beta-3595"
+    compile "org.jetbrains.kotlin:kotlin-reflect:1.0.0-beta-3595"
 }
