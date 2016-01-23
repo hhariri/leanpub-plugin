@@ -1,0 +1,50 @@
+<idea-plugin version="2">
+  <id>com.hadihariri.plugins.leanpub</id>
+  <name>LeanPub</name>
+  <version>1.0</version>
+  <vendor email="mail@hadihariri.com" url="http://hadihariri.com">Hadi Hariri</vendor>
+
+  <description><![CDATA[
+      Generate preview directly from inside IntelliJ IDEA<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+      <projectConfigurable instance="com.hadihariri.leanpub.LeanpubSettings" groupId="tools"
+                           groupWeight="130" displayName="LeanPub"/>
+      <projectService serviceInterface="com.hadihariri.leanpub.LeanpubSettingsProvider"
+                      serviceImplementation="com.hadihariri.leanpub.LeanpubSettingsProvider"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+
+      <action id="Previewaction" class="com.hadihariri.leanpub.PreviewAction" text="Generate Leanpub Preview"
+              description="Generate Leanpub Preview">
+          <add-to-group group-id="ToolsMenu" anchor="last"/>
+      </action>
+  </actions>
+
+</idea-plugin>
