@@ -1,3 +1,5 @@
+[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)](https://teamcity.jetbrains.com/viewType.html?buildTypeId=IntellijIdeaPlugins_LeanpubPlugin_Build&tab=buildTypeStatusDiv)
+
 # Leanpub Plugin
 
 Allows requesting preview and publishing of Leanpub books directly from inside
@@ -7,8 +9,9 @@ IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
 
 You can download the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
 
-You can also download [latest binary](distro/leanpub-1.0.zip) and install from disk (this is only temp until I 
-get the binaries on TeamCity and Plugin Repo)
+You can also download [latest binary]() and install from disk.
+
+
 
 ### Building from source
 
@@ -17,7 +20,7 @@ Download and run
     gradle build
     
 It uses the [Gradle IntelliJ Plugin](https://github.com/JetBrains/gradle-intellij-plugin) to build plugins which does all the heavyweight lifting. Note, this is not the Gradle plugin for IntelliJ IDEA (which already ships with the IDE)
-but a Gradle plugin for plugin development. Too many plugins there? It's fine actually. 
+but a Gradle plugin for plugin development. Inception? 
 
 
 
@@ -27,6 +30,7 @@ The plugin requires to configuration parameters:
 
 * API
 * Book Slug
+
 
 ![Config](images/config.png)
 
