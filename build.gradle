@@ -14,9 +14,17 @@ plugins {
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'kotlin'
 
+
+
 intellij {
     version '15.0.1'
     pluginName 'leanpub'
+    publish {
+        username publishUsername
+        password publishPassword
+        pluginId '8167'
+        channel  publishChannel
+    }
 }
 
 group 'com.hadihariri'
