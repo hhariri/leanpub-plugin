@@ -1,7 +1,7 @@
 # Leanpub Plugin
 
 
-[![Build Status](https://teamcity.jetbrains.com/app/rest/builds/buildType:(id:IntellijIdeaPlugins_LeanpubPlugin_Build)/statusIcon.svg?guest=1)]
+![Build Status](https://teamcity.jetbrains.com/app/rest/builds/buildType:(id:IntellijIdeaPlugins_LeanpubPlugin_Build)/statusIcon.svg?guest=1)
 
 Allows requesting preview and publishing of Leanpub books directly from inside
 IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
