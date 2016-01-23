@@ -7,7 +7,9 @@ IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
 
 You can download the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
 
-You can also download [latest binary](distro/leanpub-1.0.zip) and install from disk
+You can also download [latest binary](distro/leanpub-1.0.zip) and install from disk (this is only temp until I 
+get the binaries on TeamCity and Plugin Repo)
+
 ### Building from source
 
 Download and run 
