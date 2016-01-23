@@ -10,7 +10,7 @@ IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
 
 You can download the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
 
-You can also download [latest binary]() and install from disk.
+You can also download [latest binary](https://teamcity.jetbrains.com/repository/downloadAll/IntellijIdeaPlugins_LeanpubPlugin_Build/.lastFinished) and install from disk.
 
 
 
