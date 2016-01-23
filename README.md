@@ -19,11 +19,11 @@ The plugin requires to configuration parameters:
 The API can be generated from your Author Dashboard on Leanpub. The book slug corresponds to the URL of your book without the
 domain name. For instance, if your Leanpub book is at:
 
-`https://leanpub.com/myfirstbook
+    https://leanpub.com/myfirstbook
 
 the slug would be:
 
-`myfirstbook
+    myfirstbook
 
 
 ## Generating previews and publishing 
