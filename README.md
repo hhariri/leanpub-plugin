@@ -8,7 +8,7 @@ IntelliJ IDEA, WebStorm or other IntelliJ-based IDE's.
 
 ## Installation
 
-You can download the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
+You can install the plugin from the [Plugin Repository](https://plugins.jetbrains.com/plugin/8167?pr=).
 
 You can also download the latest binary from the [TeamCity server](https://teamcity.jetbrains.com/viewType.html?buildTypeId=IntellijIdeaPlugins_LeanpubPlugin_Build)
 and install from disk.
@@ -28,7 +28,7 @@ but a Gradle plugin for plugin development. Inception?
 
 ## Setup
 
-The plugin requires to configuration parameters:
+The plugin requires two configuration parameters:
 
 * API
 * Book Slug
