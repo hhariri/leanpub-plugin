@@ -2,7 +2,6 @@ package com.hadihariri.leanpub
 
 import com.intellij.openapi.ui.Messages
 import org.apache.http.NameValuePair
-import org.apache.http.StatusLine
 import org.apache.http.client.entity.UrlEncodedFormEntity
 import org.apache.http.client.methods.HttpPost
 import org.apache.http.impl.client.HttpClients
