@@ -1,9 +1,8 @@
 package com.hadihariri.leanpub
 
 import com.intellij.openapi.options.SearchableConfigurable
-import javax.swing.JComponent
-import com.intellij.psi.PsiManager
 import com.intellij.openapi.project.Project
+import javax.swing.JComponent
 
 class LeanpubSettings(val project: Project): SearchableConfigurable {
     val panel = LeanpubSettingsPanel()

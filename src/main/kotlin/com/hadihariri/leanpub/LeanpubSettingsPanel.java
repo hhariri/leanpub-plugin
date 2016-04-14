@@ -10,6 +10,10 @@ public class LeanpubSettingsPanel {
     private JTextField bookSlug;
     private JTextField apiKey;
     private LeanpubSettingsProvider leanpubSettingsProvider;
+
+    public LeanpubSettingsPanel() {
+    }
+
     public JComponent createPanel(LeanpubSettingsProvider leanpubSettingsProvider) {
 
         this.leanpubSettingsProvider = leanpubSettingsProvider;
